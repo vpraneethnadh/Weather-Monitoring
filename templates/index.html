@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqE7fDXaMEdoWlJZn3cAFqBuwXcyacW9k"></script>
+    <style>
+        /* Additional styles for the weather info section */
+        .result-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centering the result-container */
+            margin-top: 20px;
+        }
+        .weather-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .info-box {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Weather App</h1>
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="result" style="display: none;"> <!-- Initially hidden -->
+            <h2 id="weatherHeader"></h2>
+            <div class="weather-info">
+                <div class="info-box">
+                    <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Feels Like:</strong> <span id="feelsLike"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Pressure:</strong> <span id="pressure"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Visibility:</strong> <span id="visibility"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Cloud Coverage:</strong> <span id="clouds"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Wind Speed:</strong> <span id="windSpeed"></span></p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Description:</strong> <span id="description"></span></p>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+        
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
