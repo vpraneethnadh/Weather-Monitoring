@@ -3,7 +3,7 @@ from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
-API_KEY = '6e75668b3fa82bc8e3848ad4c729d5b6'  # Replace with your actual API key
+API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'  # Replace with your actual API key
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
 # Route to serve the homepage (index.html)
