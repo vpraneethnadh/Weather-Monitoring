@@ -16,10 +16,43 @@ The **Weather Monitoring System** is a powerful tool that provides accurate weat
 - **OpenWeather API** (Weather forecasting data)  
 - **Python/JavaScript** (Core programming logic)  
 - **HTML, CSS** (User Interface)  
-- **Data Visualization Tools** (Charts and graphs)  
 
 ## 📂 Installation & Usage  
 1. **Clone the repository:**  
    ```sh
    git clone https://github.com/vpraneethnadh/Weather-Monitoring.git
    cd Weather-Monitoring
+2. Create & Activate a Virtual Environment (Optional but Recommended)
+   ```sh
+   # On Windows
+   python -m venv venv
+   venv\Scripts\activate  
+   
+   # On macOS/Linux
+   python3 -m venv venv
+   source venv/bin/activate
+
+3. Install Dependencies
+   ```sh
+   pip install -r requirements.txt
+
+4. Optain API Keys
+   To run this project, you need to create accounts and generate API keys for:
+
+   - **Google Maps API**: [Get API Key](https://console.cloud.google.com/)  
+   - **OpenWeather API**: [Get API Key](https://home.openweathermap.org/api_keys)
+   After getting those API Keys replace in the file weather_app.py where we said to replace.
+
+5. Run FLask Server
+   ```sh
+   flask run
+
+
+### 📌 What’s Included?  
+✔ **Complete project description**  
+✔ **Step-by-step setup instructions**  
+✔ **Links to obtain required API keys**  
+✔ **Flask setup and running instructions**  
+✔ **Repository link**  
+
+This **README.md** file is fully formatted for GitHub. You can update it anytime as your project evolves. 🚀
