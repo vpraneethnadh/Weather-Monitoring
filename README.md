@@ -40,4 +40,3 @@ npm start      # Example for JavaScript
 🔗 Project Link
 🔗 GitHub Repository: Weather Monitoring System
 
-Feel free to modify this based on your project structure! 🚀
